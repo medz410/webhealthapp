@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="header">
+    <p>Health Profile</p>
+  </div>
+    <div class="container">
+      <div *ngFor="let item of patientlist"> 
+        <option  (click)="getPatientInfo(item)" value="item.id">{{item.name}}</option>
+      </div>
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true"></i></span>
+            <input [(ngModel)]="patientModel.name" type="name" name="name" placeholder="Name" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true"></i></span>
+            <input [(ngModel)]="patientModel.age" type="number" name="age" placeholder="age" required />
+          </div>
+          <fieldset >
+            <legend>Medical Conditions</legend>
+            <div *ngFor="let item of medicalConditionData">
+              <input  type="checkbox" id="item.id" name="item.label" value="item.value">
+              <label for="item.label"> {{item.label}}</label><br>
+            </div>
+           </fieldset>
+           <div class="input_field"> <span><i aria-hidden="true"></i></span>
+            <input  [(ngModel)]="patientModel.bp" type="name" name="bp" placeholder="BP" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" ></i></span>
+            <input [(ngModel)]="patientModel.height" type="name" name="height" placeholder="Height" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" ></i></span>
+            <input [(ngModel)]="patientModel.weight" type="name" name="weight" placeholder="Weight" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" ></i></span>
+            <input [(ngModel)]="patientModel.pluserate" type="name" name="pulserate" placeholder="Pulserate" required />
+          </div>
+        </form>
+  </div>
+  <div class="footer">
+    <button (click)="nextPageClick()">Next</button>
+  </div>
+</div>
+
+
+
+
+     
+
+
+

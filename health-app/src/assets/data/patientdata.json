@@ -1,0 +1,30 @@
+{
+    "message": "Data Retrived",
+    "success": true,
+    "data": [
+        {
+                "name":"John",
+                "age":"29",
+                "bp":"110",
+                "height":"5.9",
+                "weight":"60",
+                "pluserate":"40",
+                 "medicalConditionArray":[
+                     "heart1",
+                     "eye3"
+                 ]
+             
+        },
+        {
+            "name":"Merry Dezouza",
+                "age":"21",
+                "bp":"170",
+                "height":"5.2",
+                "weight":"50",
+                "pluserate":"39",
+                 "medicalConditionArray":[
+                     "heart1",
+                     "diabetes4"
+                 ]
+        }
+    ]}

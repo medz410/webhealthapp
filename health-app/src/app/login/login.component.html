@@ -1,0 +1,11 @@
+
+<div class="login-page">
+  <div class="form">
+    <form [formGroup]="signInGroup" class="login-form">
+      <input  [(ngModel)]="loginModel.userName"   formControlName="email" type="text" placeholder="username"/>
+      <input [(ngModel)]="loginModel.password" formControlName="Password" type="password" placeholder="password"/>
+    </form>
+    <button (click)="loginPageClick()">login</button>
+
+  </div>
+</div>
